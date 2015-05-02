@@ -77,6 +77,8 @@ int main (int argc, char **argv)
         return(-1);
     }
 
+    audio_hw_start(NULL);
+
     while (1) {
         midi_hw_process_input(NULL);
     }
